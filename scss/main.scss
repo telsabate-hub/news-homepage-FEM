@@ -1,0 +1,54 @@
+@use "config";
+
+header {
+    padding: 10px 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 48px;
+    height: 26px;
+}
+
+.menu-btn {
+    border: none;
+    background: transparent;
+}
+
+nav {
+    // display: none;
+}
+
+.banner-img {
+    width: 100%;
+}
+
+h1 {
+    color: config.$very_dark_blue;
+}
+
+h2 {
+    color: config.$soft_orange;
+}
+
+section {
+    background-color: config.$very_dark_blue;
+
+    h3 {
+        color: config.$off_white;
+    }
+
+    p {
+        color: config.$grayish_blue;
+    }
+}
+
+h3 {
+    color: config.$very_dark_blue;
+}
+
+.rank {
+    color: config.$soft_red;
+}

@@ -1,0 +1,60 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  color: hsl(236, 13%, 42%);
+  padding: 16px;
+}
+
+header {
+  padding: 10px 0 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 48px;
+  height: 26px;
+}
+
+.menu-btn {
+  border: none;
+  background: transparent;
+}
+
+.banner-img {
+  width: 100%;
+}
+
+h1 {
+  color: hsl(240, 100%, 5%);
+}
+
+h2 {
+  color: hsl(35, 77%, 62%);
+}
+
+section {
+  background-color: hsl(240, 100%, 5%);
+}
+section h3 {
+  color: hsl(36, 100%, 99%);
+}
+section p {
+  color: hsl(233, 8%, 79%);
+}
+
+h3 {
+  color: hsl(240, 100%, 5%);
+}
+
+.rank {
+  color: hsl(5, 85%, 63%);
+}

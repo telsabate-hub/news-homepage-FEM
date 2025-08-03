@@ -11,12 +11,17 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
   <header>
-    <img src="./assets/images/logo.svg" alt="News Page Logo"/>
+    <img src="./assets/images/logo.svg" alt="News Page Logo" class="logo"/>
     <nav>
-      <ul>
+      <button aria-controls="mainNav" aria-expanded="false" aria-label="Open main menu" class="menu-btn">
+        <img src="./assets/images/icon-menu.svg" alt="Menu icon"/>
+      </button>
+      <ul id="mainNav" hidden>
         <li>
           <a href="#">Home</a>
         </li>
@@ -36,7 +41,7 @@
     </nav>
   </header>
   <main>
-    <img src="./assets/images/image-web-3-mobile.jpg" alt="" />
+    <img src="./assets/images/image-web-3-mobile.jpg" alt="" class="banner-img"/>
     <h1>The Bright Future of Web 3.0?</h1>
     <div>
       <p>We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
@@ -63,21 +68,21 @@
 
     <article>
       <img src="./assets/images/image-retro-pcs.jpg" alt="Retro PCs Image"/>
-      <p>01</p>
+      <p class="rank">01</p>
       <h3>Reviving Retro PCs</h3>
       <p>What happens when old PCs are given modern upgrades?</p>
     </article>
 
     <article>
       <img src="./assets/images/image-top-laptops.jpg" alt="Laptop Keyboard Image"/>
-      <p>02</p>
+      <p class="rank">02</p>
       <h3>Top 10 Laptops of 2022</h3>
       <p>Our best picks for various needs and budgets.</p>
     </article>
 
     <article>
       <img src="./assets/images/image-gaming-growth.jpg" alt="A joystick floating on top a hand"/>
-      <p>03</p>
+      <p class="rank">03</p>
       <h3>The Growth of Gaming</h3>
       <p>How the pandemic has sparked fresh opportunities.</p>
     </article>

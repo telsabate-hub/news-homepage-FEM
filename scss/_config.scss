@@ -1,0 +1,20 @@
+$soft_orange: hsl(35, 77%, 62%);
+$soft_red: hsl(5, 85%, 63%);
+$off_white: hsl(36, 100%, 99%);
+$grayish_blue: hsl(233, 8%, 79%);
+$dark_grayish_blue: hsl(236, 13%, 42%);
+$very_dark_blue: hsl(240, 100%, 5%);
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: $dark_grayish_blue;
+    padding: 16px;
+}
