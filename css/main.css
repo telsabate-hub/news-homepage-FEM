@@ -29,6 +29,40 @@ header {
   background: transparent;
 }
 
+.main-nav {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.main-nav[hidden] {
+  display: none;
+}
+.main-nav li {
+  font-size: 1.25em;
+}
+.main-nav a {
+  text-decoration: none;
+  color: hsl(240, 100%, 5%);
+}
+
+.open-nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 258px;
+  height: 100%;
+  background-color: hsl(36, 100%, 99%);
+  padding: 140px 25px 25px;
+}
+
+.close-icon {
+  position: fixed;
+  z-index: 99;
+  top: 30px;
+  right: 20px;
+}
+
 .banner-img {
   width: 100%;
 }

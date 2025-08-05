@@ -17,8 +17,43 @@ header {
     background: transparent;
 }
 
-nav {
-    // display: none;
+.main-nav {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    gap: 25px;
+    // height: 75%;
+
+    &[hidden]{
+        display: none;
+    }
+
+    li {
+        font-size: 1.25em;
+    }
+
+    a {
+        text-decoration: none;
+        color: config.$very_dark_blue;
+    }
+}
+
+.open-nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 258px;
+    height: 100%;
+    background-color: config.$off_white;
+    padding: 140px 25px 25px;
+}
+
+.close-icon {
+    position: fixed;
+    z-index: 99;
+    top: 30px;
+    right: 20px;
 }
 
 .banner-img {
@@ -51,4 +86,8 @@ h3 {
 
 .rank {
     color: config.$soft_red;
+}
+
+.send-to-back {
+    
 }

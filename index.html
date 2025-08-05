@@ -13,31 +13,35 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="./css/main.css">
+  <script src="./js/main.js" defer></script>
 </head>
 <body>
   <header>
     <img src="./assets/images/logo.svg" alt="News Page Logo" class="logo"/>
     <nav>
-      <button aria-controls="mainNav" aria-expanded="false" aria-label="Open main menu" class="menu-btn">
-        <img src="./assets/images/icon-menu.svg" alt="Menu icon"/>
+      <button id="menuBtn" aria-controls="mainNav" aria-expanded="false" aria-label="Open main menu" class="menu-btn">
+        <img src="./assets/images/icon-menu.svg" alt="Open Menu" class="open-icon"/>
+        <img src="./assets/images/icon-menu-close.svg" alt="Close menu" class="close-icon" hidden/>
       </button>
-      <ul id="mainNav" hidden>
-        <li>
-          <a href="#">Home</a>
-        </li>
-        <li>
-          <a href="#">New</a>
-        </li>
-        <li>
-          <a href="#">Popular</a>
-        </li>
-        <li>
-          <a href="#">Trending</a>
-        </li>
-        <li>
-          <a href="#">Categories</a>
-        </li>
-      </ul>
+      <!-- <div class="open-nav" id="openNav" hidden> -->
+        <ul id="mainNav" class="main-nav" hidden>
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#">New</a>
+          </li>
+          <li>
+            <a href="#">Popular</a>
+          </li>
+          <li>
+            <a href="#">Trending</a>
+          </li>
+          <li>
+            <a href="#">Categories</a>
+          </li>
+        </ul>
+      <!-- </div> -->
     </nav>
   </header>
   <main>
