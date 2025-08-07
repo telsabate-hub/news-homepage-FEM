@@ -1,0 +1,175 @@
+@use "config";
+
+header {
+    padding: 10px 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+main {
+    padding-bottom: 50px;
+}
+
+body.menu-open {
+    overflow: hidden;
+}
+
+.logo {
+    width: 48px;
+    height: 26px;
+}
+
+.menu-btn {
+    border: none;
+    background: transparent;
+}
+
+.main-nav {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    gap: 25px;
+    // height: 75%;
+
+    &[hidden]{
+        display: none;
+    }
+
+    li {
+        font-size: 1.125rem;
+    }
+
+    a {
+        text-decoration: none;
+        color: config.$very_dark_blue;
+    }
+}
+
+.open-nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 258px;
+    height: 100%;
+    background-color: config.$off_white;
+    padding: 140px 25px 25px;
+}
+
+.close-icon {
+    position: fixed;
+    z-index: 99;
+    top: 30px;
+    right: 20px;
+}
+
+.banner-img {
+    display: block;
+    width: 100%;
+}
+
+h1 {
+    color: config.$very_dark_blue;
+    font-weight: 800;
+    font-size: 2.60125rem;
+    margin: 20px 0 10px;
+    line-height: 1;
+}
+
+h2 {
+    color: config.$soft_orange;
+    font-size: 2.125rem;
+}
+
+section {
+    background-color: config.$very_dark_blue;
+    
+    h3 {
+        color: config.$off_white;
+        font-size: 1.3125rem;
+        padding-bottom: 10px;
+    }
+    
+    p {
+        color: config.$grayish_blue;
+        line-height: 1.7;
+    }
+    
+    article {
+        border-bottom: 1px solid config.$grayish_blue;
+        padding: 30px 0 25px;
+    }
+
+    article:last-of-type{
+        border: none;
+    }
+}
+
+h3 {
+    color: config.$very_dark_blue;
+}
+
+.rank {
+    color: config.$soft_red;
+    font-weight: 800;
+    font-size: 1.875rem;
+}
+
+.menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    // z-index: 999;
+    display: none;
+}
+
+.news-preview {
+    line-height: 1.7;
+}
+
+.read-more-btn {
+    margin-top: 20px;
+    text-transform: uppercase;
+    background-color: config.$soft_red;
+    color: config.$very_dark_blue;
+    border: none;
+    padding: 15px 30px;
+    margin: 25px 0;
+    font-weight: 700;
+    letter-spacing: 5px;
+}
+
+.new-articles {
+    margin: 40px 0 45px;
+    padding: 20px 20px 0;
+}
+
+.top-news {
+    display: flex;
+    padding: 16px 0;
+    gap: 20px;
+
+    div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    img {
+        width: 100px;
+    }
+
+    h3 {
+        font-weight: 800;
+        font-size: 1.125rem;
+        padding: 10px 0;
+    }
+
+}
+
+.description {
+    line-height: 1.7;
+}

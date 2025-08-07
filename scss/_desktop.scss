@@ -1,0 +1,17 @@
+@media screen and (min-width: 712px){
+    .menu-btn {
+        display: none;
+    }
+
+    .main-nav {
+        flex-direction: row;
+    }
+
+    .main-nav[hidden] {
+        display: flex;
+    }
+
+    .banner-img {
+        src: url("../assets/images/image-web-3-desktop.jpg");
+    }
+}
