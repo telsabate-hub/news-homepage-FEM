@@ -53,6 +53,9 @@ body.menu-open {
   text-decoration: none;
   color: hsl(240, 100%, 5%);
 }
+.main-nav a:hover, .main-nav a:focus {
+  color: hsl(5, 85%, 63%);
+}
 
 .open-nav {
   position: fixed;
@@ -93,9 +96,14 @@ section {
   background-color: hsl(240, 100%, 5%);
 }
 section h3 {
+  padding-bottom: 10px;
+}
+section h3 a {
   color: hsl(36, 100%, 99%);
   font-size: 1.3125rem;
-  padding-bottom: 10px;
+}
+section h3 a:hover, section h3 a:focus {
+  color: hsl(35, 77%, 62%);
 }
 section p {
   color: hsl(233, 8%, 79%);
@@ -109,8 +117,13 @@ section article:last-of-type {
   border: none;
 }
 
-h3 {
+h3 a {
   color: hsl(240, 100%, 5%);
+  text-decoration: none;
+  padding: 0;
+}
+h3 a:hover, h3 a:focus {
+  color: hsl(5, 85%, 63%);
 }
 
 .rank {
@@ -145,6 +158,10 @@ h3 {
   font-weight: 800;
   letter-spacing: 5px;
 }
+.read-more-btn:focus, .read-more-btn:hover {
+  background-color: hsl(240, 100%, 5%);
+  color: hsl(36, 100%, 99%);
+}
 
 .new-articles {
   margin: 40px 0 45px;
@@ -173,7 +190,7 @@ h3 {
   line-height: 1.7;
 }
 
-@media screen and (min-width: 712px) {
+@media screen and (min-width: 1084px) {
   body {
     width: 1085px;
     margin: auto;

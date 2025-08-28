@@ -29,9 +29,7 @@ body.menu-open {
     list-style: none;
     display: flex;
     flex-direction: column;
-    // justify-content: center;
     gap: 25px;
-    // height: 75%;
 
     &[hidden]{
         display: none;
@@ -44,6 +42,10 @@ body.menu-open {
     a {
         text-decoration: none;
         color: config.$very_dark_blue;
+
+        &:hover, &:focus {
+            color: config.$soft_red;
+        }
     }
 }
 
@@ -86,9 +88,16 @@ section {
     background-color: config.$very_dark_blue;
     
     h3 {
-        color: config.$off_white;
-        font-size: 1.3125rem;
         padding-bottom: 10px;
+
+        a {
+            color: config.$off_white;
+            font-size: 1.3125rem;
+
+            &:hover, &:focus {
+                color: config.$soft_orange;
+            }
+        }
     }
     
     p {
@@ -106,8 +115,14 @@ section {
     }
 }
 
-h3 {
+h3 a {
     color: config.$very_dark_blue;
+    text-decoration: none;
+    padding: 0;
+
+    &:hover, &:focus {
+        color: config.$soft_red;
+    }
 }
 
 .rank {
@@ -123,7 +138,6 @@ h3 {
     width: 100vw;
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.5);
-    // z-index: 999;
     display: none;
 }
 
@@ -142,6 +156,11 @@ h3 {
     margin: 25px 0;
     font-weight: 800;
     letter-spacing: 5px;
+
+    &:focus, &:hover {
+        background-color: config.$very_dark_blue;
+        color: config.$off_white;
+    }
 }
 
 .new-articles {

@@ -1,6 +1,6 @@
 @use "config";
 
-@media screen and (min-width: 712px){
+@media screen and (min-width: 1084px){
     body {
         width: 1085px;
         margin: auto;
@@ -14,9 +14,7 @@
     main {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        // grid-template-rows: repeat(3, 1fr);
         grid-template-rows: 293px 280px auto;
-        // gap: 8px 28px;
         gap: 0px 28px;
         padding-bottom: 0;
         height: 800px;
@@ -52,7 +50,6 @@
 
     .banner-img {
         height: 293px;
-        // height: 100%;
     }
 
     h1 {
@@ -87,10 +84,6 @@
         h3 {
             font-size: 1.25rem;
         }
-
-        // article {
-        //     padding: 30px 0 25px;
-        // }
     }
 
     .top-news {
