@@ -10,6 +10,7 @@ body {
   font-size: 15px;
   color: hsl(236, 13%, 42%);
   padding: 16px;
+  background-color: hsl(36, 100%, 99%);
 }
 
 header {
@@ -148,7 +149,6 @@ h3 a:hover, h3 a:focus {
 
 .read-more-btn {
   font-family: "Inter", sans-serif;
-  margin-top: 20px;
   text-transform: uppercase;
   background-color: hsl(5, 85%, 63%);
   color: hsl(240, 100%, 5%);
